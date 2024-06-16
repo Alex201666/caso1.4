@@ -4,8 +4,8 @@ pipeline {
     stages {
         stage('Get Code') {
             steps {
-                //Obtener el código del repositorio
-                git 'https://github.com/Alex201666/caso1.4.git'
+                // Obtener el código de la rama develop del repositorio
+                git branch: 'develop', url: 'https://github.com/Alex201666/caso1.4.git'
             }
         }
 
